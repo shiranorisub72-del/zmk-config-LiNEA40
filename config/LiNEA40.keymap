@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,
+            //スクロール方向を逆転,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -123,10 +123,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp L         &kp U               &kp COMMA  &kp PERIOD                                 &kp F        &kp W  &kp R                &kp Y      &kp P
-&kp E          &kp I         &kp A               &kp O      &kp MINUS                                  &kp K        &kp T  &kp N                &kp S      &kp H
-&mt COLON N    &kp Z         &kp X               &kp C      &kp V                                      &kp G        &kp D  &kp M                &kp J      &lt 3 B
-&mt LCTRL ESC  &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &trans     &lt 3 SPACE  &lt 2 TAB    &lt 2 BACKSPACE  &lt 4 ENTER         &lt 6 RIGHT_BRACKET  &kp UNDER  &mt RIGHT_SHIFT SLASH
+&kp Q             &kp L         &kp U               &kp COMMA  &kp PERIOD                                 &kp F        &kp W  &kp R                &kp Y      &kp P
+&mt LEFT_SHIFT E  &kp I         &kp A               &kp O      &kp MINUS                                  &kp K        &kp T  &kp N                &kp S      &kp H
+&mt COLON N       &kp Z         &kp X               &kp C      &kp V                                      &kp G        &kp D  &kp M                &kp J      &lt 3 B
+&mt LCTRL ESC     &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &trans     &lt 3 SPACE  &lt 2 TAB    &lt 2 BACKSPACE  &lt 4 ENTER         &lt 6 RIGHT_BRACKET  &kp UNDER  &mt RIGHT_SHIFT SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -173,10 +173,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &kp LG(P)   &trans               &kp LA(PRINTSCREEN)  &trans               &kp LC(LA(DELETE))
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &kp C_MUTE  &trans               &kp LS(LG(S))        &trans               &kp LC(LS(ESCAPE))
-&trans  &trans  &trans  &kp F11  &kp F12                    &kp F2      &kp INTERNATIONAL_5  &trans               &kp INTERNATIONAL_4  &kp LC(LA(INS))
-&trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans                           &trans               &trans               &trans
+&kp F1             &kp F2  &kp F3        &kp F4   &kp F5                     &kp LG(P)   &trans               &kp LA(PRINTSCREEN)  &trans               &kp LC(LA(DELETE))
+&kp F6             &kp F7  &kp F8        &kp F9   &kp F10                    &kp C_MUTE  &trans               &kp LS(LG(S))        &trans               &kp LC(LS(ESCAPE))
+&trans             &trans  &trans        &kp F11  &kp F12                    &kp F2      &kp INTERNATIONAL_5  &trans               &kp INTERNATIONAL_4  &kp LC(LA(INS))
+&kp RIGHT_CONTROL  &trans  &kp LEFT_ALT  &trans   &trans   &trans    &trans  &trans                           &trans               &trans               &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
