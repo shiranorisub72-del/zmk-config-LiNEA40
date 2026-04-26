@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -123,10 +123,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U               &kp COMMA  &kp PERIOD                                 &kp F        &kp W  &kp R                &kp Y       &kp P
-&mt LEFT_SHIFT E  &kp I         &kp A               &kp O      &kp MINUS                                  &kp K        &kp T  &kp N                &kp S       &kp H
-&kp SQT           &kp Z         &kp X               &kp C      &kp V                                      &kp G        &kp D  &kp M                &mt J Z     &lt 3 B
-&mt LCTRL ESC     &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &trans     &lt 3 SPACE  &lt 2 TAB    &lt 2 BACKSPACE  &lt 4 ENTER         &lt 6 RIGHT_BRACKET  &kp INT_RO  &mt RIGHT_SHIFT SLASH
+&kp Q             &kp L         &kp U         &kp COMMA  &kp PERIOD                                 &kp F        &kp W  &kp R               &kp Y       &kp P
+&mt LEFT_SHIFT E  &kp I         &kp A         &kp O      &kp MINUS                                  &kp K        &kp T  &kp N               &kp S       &kp H
+&kp SQT           &kp Z         &kp X         &kp C      &kp V                                      &kp G        &kp D  &kp M               &mt J Z     &lt 3 B
+&mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &trans     &lt 3 SPACE  &lt 2 TAB    &lt 2 BACKSPACE  &lt 4 ENTER         &lt 6 LEFT_BRACKET  &kp INT_RO  &mt RIGHT_SHIFT SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -147,10 +147,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION          &kp AT  &kp HASH      &kp DOLLAR     &kp PERCENT                             &kp CARET  &kp AMPERSAND      &kp ASTRK          &kp LEFT_PARENTHESIS  &kp EQUAL
-&kp LEFT_SHIFT           &trans  &trans        &kp SEMICOLON  &kp UNDERSCORE                          &kp COLON  &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PLUS
-&trans                   &trans  &trans        &kp SQT        &kp MINUS                               &kp F2     &trans             &kp LT             &kp GT                &kp INT_YEN
-&mt LEFT_CONTROL ESCAPE  &trans  &kp LEFT_ALT  &trans         &trans          &trans    &kp LEFT_ALT  &trans                        &trans             &kp INT_RO            &mt RSHIFT SLASH
+&kp EXCLAMATION          &kp AT        &kp HASH      &kp DOLLAR     &kp PERCENT                             &kp CARET  &kp AMPERSAND      &kp ASTRK          &kp LEFT_PARENTHESIS  &kp EQUAL
+&kp LEFT_SHIFT           &trans        &trans        &kp SEMICOLON  &kp UNDERSCORE                          &kp COLON  &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PLUS
+&trans                   &trans        &trans        &kp SQT        &kp MINUS                               &kp F2     &trans             &kp LT             &kp GT                &kp INT_YEN
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &trans         &trans          &trans    &kp LEFT_ALT  &trans                        &kp LEFT_BRACKET   &kp INT_RO            &mt RSHIFT SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
@@ -160,10 +160,10 @@
 
         CURSOR {
             bindings = <
-&kp LEFT_CONTROL         &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                                   &kp SLASH        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&kp LEFT_SHIFT           &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &kp UNDERSCORE                           &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&kp HOME                 &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                                   &kp F2           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&mt LEFT_CONTROL ESCAPE  &kp LEFT_GUI            &kp LEFT_ALT  &trans                   &trans          &trans    &kp RIGHT_ALT  &kp NUMBER_0                   &kp DOT       &kp ENTER     &kp RIGHT_SHIFT
+&kp LEFT_CONTROL         &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                                   &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp FSLH
+&kp LEFT_SHIFT           &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &kp UNDERSCORE                           &kp COLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTRK
+&kp HOME                 &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                                   &kp F2        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F4
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_GUI            &kp LEFT_ALT  &trans                   &trans          &trans    &kp RIGHT_ALT  &kp NUMBER_0                &kp DOT       &kp ENTER     &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
