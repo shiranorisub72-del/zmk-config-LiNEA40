@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -99,16 +99,6 @@
         ClickNext {
             bindings = <&mkp MB5>;
             key-positions = <26 27>;
-        };
-
-        ALT+Win {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <1 2>;
-        };
-
-        ALT+TAB {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <12 13>;
         };
     };
 
